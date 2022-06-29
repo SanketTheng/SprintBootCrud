@@ -1,0 +1,19 @@
+
+<div class="div">
+    <h1>{{ message }}</h1>
+</div>
+<form>
+    <div class="form-group">
+      <label for="pid">Patient ID</label>
+      <input type="number" class="form-control" id="pid" [(ngModel)]="user.pid" name="pid" placeholder="Patient ID">
+    </div>
+    <div class="form-group">
+      <label for="pname">Patient Name</label>
+      <input type="text" class="form-control" id="pname" [(ngModel)]="user.pname" name="pname"placeholder="Patient Name">
+    </div>
+    <div class="form-group">
+        <label for="pdesc">Patient Description</label>
+        <input type="text" class="form-control" id="pdesc" [(ngModel)]="user.pdesc" name="pdesc" placeholder="Patient Description">
+    </div>
+    <button type="submit" class="btn btn-primary"(click)="registerData()">Submit</button>
+  </form>

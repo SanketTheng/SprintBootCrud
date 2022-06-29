@@ -1,0 +1,27 @@
+<div class='panel panel-primary'>  
+    <div class='panel-heading'>  
+        <p>Table</p> 
+    </div>   
+    <div class='panel-body'>  
+        <div class='table-responsive'>  
+            <table class='table'>  
+                <thead>  
+                    <tr>  
+                        <th>pid</th>  
+                        <th>pname</th>  
+                        <th>pdesc</th>  
+                        <th>Action</th>
+                    </tr>  
+                </thead>  
+                <tbody>  
+                    <tr *ngFor="let user of users">  
+                        <td>{{user.pid}}</td>  
+                        <td>{{user.pname}}</td>  
+                        <td>{{user.pdesc}}</td>  
+                        <td><button class="btn btn-primary"(click)="deleteData(user)">Delete</button></td>
+                    </tr>  
+                </tbody>  
+            </table>  
+        </div>  
+    </div>  
+</div> 
